@@ -9,9 +9,6 @@ const message = Buffer.from('1234567890123456789');
 const client = dgram.createSocket('udp4');
 
 
-
-
-
 function send() {
     const message = Buffer.from('1234567890123456789');
     const client = dgram.createSocket('udp4');
