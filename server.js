@@ -1,7 +1,7 @@
 const http = require('node:http');
 const dgram = require('node:dgram');
 const { Buffer } = require('node:buffer');
-
+const serverless = require("serverless-http");
 const express = require('express')
 const app = express()
 const port = 3000
@@ -15,7 +15,7 @@ const client = dgram.createSocket('udp4');
 function send() {
     const message = Buffer.from('1234567890123456789');
     const client = dgram.createSocket('udp4');
-    client.send(message, 1234, '192.168.1.93', (err) => {
+    client.send(message, 1234, '75.82.36.11', (err) => {
       client.close();
     });
     }
