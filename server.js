@@ -25,8 +25,6 @@ app.get('/', (req, res) => {
 })
 app.get('/siren', (req, res) => {
     res.send('<h1> WRONG! </h1>')
-
-
   })
   app.post('/send', (req, res) => {
 console.log("send")
